@@ -1,0 +1,20 @@
+.day-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.day-name {
+    font-size: 1.8rem;
+    width: 140px;
+}
+
+.day-item img {
+    height: 60px;
+    margin: 0 3vw;
+}
+
+.day-item .temp-range {
+    font-size: 1.4rem;
+}

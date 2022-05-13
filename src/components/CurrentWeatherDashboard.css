@@ -1,0 +1,22 @@
+.current-weather-dashboard.ui.segment {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2vw auto;
+}
+
+.current-weather-dashboard span {
+    font-size: 2.5rem;
+    margin: 0;
+    line-height: 1em;
+}
+
+.current-weather-dashboard img {
+    height: 80px;
+}
+
+@media (min-width: 700px) {
+    .current-weather-dashboard.container {
+        width: 20vw;
+    }
+}

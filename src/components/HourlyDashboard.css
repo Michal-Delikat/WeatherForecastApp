@@ -1,0 +1,4 @@
+.hourly-dashboard.container {
+    display: flex;
+    overflow-x: auto;
+}
