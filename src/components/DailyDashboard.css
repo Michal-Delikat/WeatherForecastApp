@@ -1,3 +1,4 @@
 .daily-dashboard.ui.segment {
     padding: 1em 2vw;
+    overflow: hidden;
 }

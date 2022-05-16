@@ -17,6 +17,12 @@
 
 @media (min-width: 700px) {
     .current-weather-dashboard.container {
+        width: 40vw;
+    }
+}
+
+@media (min-width: 1000px) {
+    .current-weather-dashboard.container {
         width: 20vw;
     }
 }

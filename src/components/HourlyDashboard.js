@@ -3,7 +3,7 @@ import './HourlyDashboard.css';
 import HourItem from './HourItem';
 
 const HourlyDashboard = (props) => {
-    if (props.hourly) {
+    if (props.hourly.length > 0) {
         const list = props.hourly.map(item => {
             var date = new Date(item.dt * 1000);
             var hour = date.getHours();
@@ -18,8 +18,8 @@ const HourlyDashboard = (props) => {
     }
     else {
         return (
-            <div className="ui segment container hourly-dashboard">
-                <div>Hourly Dashboard</div>
+            <div className="ui segment container ">
+                <span>Loading...</span>
             </div>
         )
     }

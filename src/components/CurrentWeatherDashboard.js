@@ -13,7 +13,7 @@ const CurrentWeatherDashboard = (props) => {
     }
     else {
         return (
-            <div className="ui segment current-weather-dashboard">
+            <div className="ui segment container current-weather-dashboard">
                 <span>Loading...</span>
             </div>
         );

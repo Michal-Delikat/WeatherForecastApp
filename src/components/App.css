@@ -1,9 +1,8 @@
 .app {
-    padding-bottom: 2em;
+    padding: 2em 0 ;
 }
 
 h1.app-title {
-    margin-top: 30px;
     font-size: 3rem;
 }
 
