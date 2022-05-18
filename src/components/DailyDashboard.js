@@ -23,7 +23,6 @@ const DailyDashboard = (props) => {
         })
         return (
             <div className="ui segment container daily-dashboard">
-                Daily Dashboard
                 {list}
             </div>
         );
