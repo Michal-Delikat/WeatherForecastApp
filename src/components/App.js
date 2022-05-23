@@ -22,7 +22,7 @@ const App = () => {
     useEffect(() => {
         if (coords.lat && coords.lon) { 
             //Get user location based on coordinates
-            axios.get('https://api.geoapify.com/v1/geocode/reverse', {params: { lat: coords.lat, lon: coords.lon, type: "city", apiKey: "44a883a230894ea582f243ffe0525f31"}})
+            axios.get('https://api.geoapify.com/v1/geocode/reverse', {params: { lat: coords.lat, lon: coords.lon, type: "city", apiKey: process.env.REACT_APP_GEOAPIFY_API_KEY}})
                 .then((location_response) => {
                     //Log location
                     //console.log(location_response);
@@ -30,7 +30,7 @@ const App = () => {
                     setCity(location_response.data.features[0].properties.city);
                     //Get weather
                     axios.get('https://api.openweathermap.org/data/2.5/onecall', 
-                        {params: { lat: coords.lat, lon: coords.lon, exclude: 'minutely', appid: "ebb06c8d5f893e67e69ac3fc4c1eb90e", units: "metric" }})
+                        {params: { lat: coords.lat, lon: coords.lon, exclude: 'minutely', appid: process.env.REACT_APP_OPENWEATHERMAP_API_KEY, units: "metric" }})
                         .then((weather_response) => {
                             //Log weather
                             //console.log(weather_response);
